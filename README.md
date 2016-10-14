@@ -1,3 +1,9 @@
+## A note from BitGo:
+This is an updated version of [zaach's npm-seal](https://github.com/zaach/npm-seal) project, where we use
+a modern version of the npm dependency and we fetch the shasums from the package's local node_modules directory,
+rather than the global node.js cache directory (~/.npm).
+
+
 # seal
 
 seal can verify that packages installed during development are identical
@@ -6,7 +12,7 @@ only ensures that package versions are the same, but does not verify contents.
 seal checks the shasum of the package tarballs downloaded by npm during
 development and deployment to ensure they are the same.
 
-![seal](https://github.com/zaach/npm-seal/raw/master/npm-seal.png)
+![seal](https://github.com/BitGo/npm-seal/raw/master/npm-seal.png)
 
 Usage:
 
